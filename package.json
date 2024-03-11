@@ -1,0 +1,7 @@
+{
+  "name": "example-typescript-pnpm-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {},
+  "license": "ISC"
+}
