@@ -8,12 +8,17 @@ importers:
 
   .: {}
 
+  frontend: {}
+
   packages/example-precompiled: {}
 
   packages/example-source-only: {}
 
   server:
     dependencies:
+      example-source-only:
+        specifier: workspace:^
+        version: link:../packages/example-source-only
       zod:
         specifier: ^3.22.4
         version: 3.22.4

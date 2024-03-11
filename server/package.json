@@ -11,10 +11,12 @@
     "typescript": "^5.4.2"
   },
   "dependencies": {
+    "example-source-only": "workspace:^",
     "zod": "^3.22.4"
   },
   "scripts": {
     "node-ts": "tsc --noEmit && node --loader ts-node/esm --no-warnings",
-    "node-swc": "tsc --noEmit && node --loader @swc-node/register/esm --no-warnings"
+    "node-swc": "tsc --noEmit && node --loader @swc-node/register/esm --no-warnings",
+    "node-swc-cjs": "tsc --noEmit && node -r @swc-node/register --no-warnings"
   }
 }
