@@ -1,7 +1,6 @@
-import { sayHello } from "example-source-only";
+import { getHello } from "example-source-only";
 import { run } from "./util.js";
 
-sayHello();
-run();
+console.log(getHello());
 
-console.log("hello world");
+run();

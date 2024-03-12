@@ -3,6 +3,11 @@
   "private": true,
   "type": "module",
   "version": "1.0.0",
+  "scripts": {
+    "node-ts": "tsc --noEmit && node --loader ts-node/esm --no-warnings --conditions=ts --watch",
+    "clean": "rm -rf dist",
+    "build-ts": "tsc"
+  },
   "devDependencies": {
     "@swc-node/register": "^1.9.0",
     "@tsconfig/node18": "^18.2.2",
@@ -13,10 +18,5 @@
   "dependencies": {
     "example-source-only": "workspace:^",
     "zod": "^3.22.4"
-  },
-  "scripts": {
-    "node-ts": "tsc --noEmit && node --loader ts-node/esm --no-warnings",
-    "node-swc": "tsc --noEmit && node --loader @swc-node/register/esm --no-warnings",
-    "node-swc-cjs": "tsc --noEmit && node -r @swc-node/register --no-warnings"
   }
 }
