@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    // "noEmit": true,
+    "outDir": "./dist",
+    "module": "none",
+    "moduleResolution": "node"
+  },
+  "include": ["./**/*.ts"]
+}
