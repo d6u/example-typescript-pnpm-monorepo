@@ -26,6 +26,12 @@ In `tsconfig.json`, we used `"module": "node16"`, which config TypeScript and ts
 
 In this package, which is a CommonJS package, thus, the emitted js file will have `require()` calls.
 
+#### Additional Explorations
+
+Add `"require": "./dist/index.cjs"` (assuming the file exists) to the dependency package's `package.json` will work with `require` in .js (or `TS_NODE_TRANSPILE_ONLY=1`), but won't work with TypeScript type checking, because it seems TypeScript doesn't check for "require" conditional exports when the source code is using `import`.
+
+Add `"require": "./dist/index.js"` seems to introduce runtime error, because "require" should point to a CJS file and all .js file is considered ESM if `"type": "module"` is specified in `package.json`.
+
 ### `run-import-esm-async.ts`:
 
 ```sh
