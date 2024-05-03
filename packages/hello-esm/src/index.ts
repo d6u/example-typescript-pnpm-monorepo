@@ -1,3 +1,3 @@
-export function getHello() {
-  return "Hello, I'm a ESM";
+export function sayHello() {
+  console.log("Hello, I'm a ESM");
 }
