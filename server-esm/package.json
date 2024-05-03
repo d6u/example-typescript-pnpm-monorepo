@@ -8,15 +8,15 @@
     "clean": "rm -rf dist",
     "build-ts": "tsc"
   },
+  "dependencies": {
+    "hello-esm": "workspace:^",
+    "zod": "^3.22.4"
+  },
   "devDependencies": {
     "@swc-node/register": "^1.9.0",
     "@tsconfig/node18": "^18.2.2",
     "@types/node": "^20.11.25",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
-  },
-  "dependencies": {
-    "example-source-only": "workspace:^",
-    "zod": "^3.22.4"
   }
 }

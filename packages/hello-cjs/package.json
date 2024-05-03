@@ -1,7 +1,6 @@
 {
-  "name": "example-source-only",
+  "name": "hello-cjs",
   "private": true,
-  "type": "module",
   "version": "1.0.0",
   "scripts": {
     "clean": "rm -rf dist",
@@ -9,7 +8,7 @@
   },
   "exports": {
     ".": {
-      "ts": "./src/index.ts",
+      "custom": "./src/index.ts",
       "types": "./src/index.ts",
       "default": "./dist/index.js"
     }

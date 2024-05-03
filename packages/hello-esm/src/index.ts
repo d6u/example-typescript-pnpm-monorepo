@@ -1,3 +1,3 @@
 export function getHello() {
-  return "Hello, World";
+  return "Hello, I'm a ESM";
 }
