@@ -113,6 +113,9 @@ importers:
 
   scripts-esm:
     devDependencies:
+      '@mobily/ts-belt':
+        specifier: ^3.13.1
+        version: 3.13.1
       '@tsconfig/node18':
         specifier: ^18.2.2
         version: 18.2.2
@@ -340,6 +343,10 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
+
+  '@mobily/ts-belt@3.13.1':
+    resolution: {integrity: sha512-K5KqIhPI/EoCTbA6CGbrenM9s41OouyK8A03fGJJcla/zKucsgLbz8HNbeseoLarRPgyWJsUyCYqFhI7t3Ra9Q==}
+    engines: {node: '>= 10.*'}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1301,6 +1308,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+
+  '@mobily/ts-belt@3.13.1': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:

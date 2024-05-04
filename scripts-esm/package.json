@@ -4,9 +4,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "node-ts": "TS_NODE_TRANSPILE_ONLY=1 node --loader ts-node --no-warnings"
+    "node-ts": "TS_NODE_TRANSPILE_ONLY=1 node --loader ts-node --no-warnings",
+    "clean": "rm -rf dist",
+    "build-ts": "tsc"
   },
   "devDependencies": {
+    "@mobily/ts-belt": "^3.13.1",
     "@tsconfig/node18": "^18.2.2",
     "@types/node": "^20.11.25",
     "hello-cjs": "workspace:^",

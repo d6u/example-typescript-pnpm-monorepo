@@ -15,3 +15,11 @@ node --loader ts-node/esm --no-warnings --conditions=custom run-import-esm.ts
 ```
 
 Should succeed and print "Hello, I'm a ESM".
+
+## `run-import-ts-belt.ts`
+
+```sh
+node --loader ts-node/esm --no-warnings --conditions=custom run-import-ts-belt.ts
+```
+
+This should fail, because `@mobily/ts-belt` doesn't have `"type": "module"` but export ESM. Thus, TypeScript recognizes its typing but ts-node doesn't.
